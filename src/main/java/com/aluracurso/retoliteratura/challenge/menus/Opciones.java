@@ -75,16 +75,15 @@ public class Opciones {
         if (!libros.isEmpty()) {
 
             for (SGLibros libro : libros) {
-                System.out.println("\n\n---------- LIBROS -------\n");
+                System.out.println("Libros");
                 System.out.println(" Titulo: " + libro.getTitulo());
                 System.out.println(" Autor: " + libro.getAutor().getNombre());
                 System.out.println(" Idioma: " + libro.getLenguaje());
                 System.out.println(" Descargas: " + libro.getDescargas());
-                System.out.println("\n-------------------------\n\n");
             }
 
         } else {
-            System.out.println("\n\n ----- NO SE ENCONTRARON RESULTADOS ---- \n\n");
+            System.out.println("Sin resultados de la busqueda");
         }
 
     }
@@ -94,15 +93,14 @@ public class Opciones {
 
         if (!autores.isEmpty()) {
             for (SGAutores autor : autores) {
-                System.out.println("\n\n---------- Autores -------\n");
+                System.out.println("Autores");
                 System.out.println(" Nombre: " + autor.getNombre());
                 System.out.println(" Fecha de Nacimiento: " + autor.getFechaNacimiento());
                 System.out.println(" Fecha de Fallecimiento: " + autor.getFechaFallecimiento());
                 System.out.println(" Libros: " + autor.getLibros());
-                System.out.println("\n-------------------------\n\n");
             }
         } else {
-            System.out.println("\n\n ----- NO SE ENCONTRARON RESULTADOS ---- \n\n");
+           System.out.println("Sin resultados de la busqueda");
 
         }
 
@@ -117,15 +115,14 @@ public class Opciones {
 
         if (!autores.isEmpty()) {
             for (SGAutores autor : autores) {
-                System.out.println("\n\n---------- Autores Vivos -------\n");
+                System.out.println("Autores vivos");
                 System.out.println(" Nombre: " + autor.getNombre());
                 System.out.println(" Fecha de nacimiento: " + autor.getFechaNacimiento());
                 System.out.println(" Fecha de fallecimiento: " + autor.getFechaFallecimiento());
                 System.out.println(" Libros: " + autor.getLibros());
-                System.out.println("\n-------------------------\n\n");
             }
         } else {
-            System.out.println("\n\n ----- NO SE ENCONTRARON RESULTADOS ---- \n\n");
+            System.out.println("Sin resultados de la busqueda");
 
         }
     }
@@ -133,7 +130,7 @@ public class Opciones {
     private void buscarPorIdiomas() {
 
         var menu = """
-				Seleccione un Idioma:
+				   Seleccione un Idioma:
 					1.- Español
 					2.- Ingles
 				
@@ -155,16 +152,15 @@ public class Opciones {
         if (!libros.isEmpty()) {
 
             for (SGLibros libro : libros) {
-                System.out.println("\n\n---------- LIBROS POR IDIOMA-------\n");
+                System.out.println("Libros filtrados por lenguaje");
                 System.out.println(" Titulo: " + libro.getTitulo());
                 System.out.println(" Autor: " + libro.getAutor().getNombre());
                 System.out.println(" Idioma: " + libro.getLenguaje());
                 System.out.println(" Descargas: " + libro.getDescargas());
-                System.out.println("\n-------------------------\n\n");
             }
 
         } else {
-            System.out.println("\n\n ----- NO SE ENCONTRARON RESULTADOS ---- \n\n");
+System.out.println("Sin resultados de la busqueda");
         }
 
 
